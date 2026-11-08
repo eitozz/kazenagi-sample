@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>風凪の旅 | デザインサンプル</title>
+<meta name="description" content="架空の旅のしおりのデザインサンプル。4日間の日程、新着情報、訪れる場所、持ち物チェックを掲載しています。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+<a class="skip" href="#schedule">集合案内へ移動</a>
+
+<header class="header">
+  <a class="brand" href="#top">
+    <span class="brand-jp">風凪</span>
+    <span class="brand-en">OUR JOURNEY<br>SAMPLE</span>
+  </a>
+  <nav class="desktop-nav" aria-label="メインナビゲーション">
+    <a href="#schedule">集合案内</a>
+    <a href="#schedule">日程を見る</a>
+    <a href="#places">訪れる場所</a>
+    <a href="#preparation">旅の準備</a>
+  </nav>
+  <a class="header-link" href="#schedule">集合を確認 <span>↗</span></a>
+  <button class="menu-button" type="button" aria-label="メニューを開く" aria-expanded="false">
+    <span class="header-countdown" id="countdown">あと157日</span>
+    <span class="menu-plus">＋</span>
+  </button>
+</header>
+<nav class="mobile-nav" aria-label="モバイルナビゲーション" hidden>
+  <a href="#schedule">集合案内</a>
+  <a href="#schedule">日程を見る</a>
+  <a href="#places">訪れる場所</a>
+  <a href="#preparation">旅の準備</a>
+</nav>
+
+<main>
+  <!-- Hero / Next event -->
+  <section class="hero">
+    <img class="hero-photo" src="assets/coast.webp" alt="風凪の架空の風景">
+    <div class="hero-shade"></div>
+    <div class="hero-top">
+      <span>架空の旅のしおり / DESIGN SAMPLE</span>
+      <span>04 / 14 — 04 / 17</span>
+    </div>
+    <div class="hero-copy">
+      <p class="hero-kicker">行程表の予定</p>
+      <h1>次の予定</h1>
+      <p class="hero-description">4月14日（水） / 集合時刻 / 予定<br>
+      <strong>09:20</strong> 風凪駅に集合<br>
+      風凪駅南口・時計塔前（駅前広場）<br>
+      出発日の集合を、今のうちに確認。架空の旅の表示例です。</p>
+      <a class="hero-cta" href="#schedule">4日間の予定 <span>↓</span></a>
+    </div>
+    <p class="photo-caption">PLACE / 旅先の風景　風凪の海辺<br>架空の場所を表現した生成画像です。</p>
+  </section>
+
+  <!-- Schedule -->
+  <section class="schedule wrap" id="schedule">
+    <p class="section-meta"><span>架空のデザインサンプル</span><span>日本時間で表示</span></p>
+    <p class="section-meta"><span>01 / SCHEDULE</span><span>2027.04.14 — 04.17</span></p>
+    <div class="section-title">
+      <h2>4日間の予定</h2>
+      <p>日付を選ぶと、その日の予定を時刻順に確認できます。</p>
+    </div>
+    <button class="text-button" type="button">印刷する</button>
+
+    <div class="day-tabs" role="tablist" aria-label="日付を選ぶ">
+      <button type="button" role="tab" aria-selected="true"><span>DAY 01</span><strong>14</strong><small>4月14日（水）風凪</small></button>
+      <button type="button" role="tab" aria-selected="false"><span>DAY 02</span><strong>15</strong><small>4月15日（木）丘の庭園</small></button>
+      <button type="button" role="tab" aria-selected="false"><span>DAY 03</span><strong>16</strong><small>4月16日（金）工房通り</small></button>
+      <button type="button" role="tab" aria-selected="false"><span>DAY 04</span><strong>17</strong><small>4月17日（土）帰路</small></button>
+    </div>
+
+    <article class="day-panel">
+      <div class="day-overview">
+        <p class="day-date">4月14日（水） / 1日目</p>
+        <h3>海辺のまちに、<br>出会う</h3>
+        <p class="day-intro">海沿いの散策路を歩きます。</p>
+        <dl class="stay"><dt>宿泊</dt><dd><a href="#schedule">海辺の宿（架空） ↗</a></dd></dl>
+        <dl class="meals"><dt>食事</dt><dd>朝：各自 / 昼：自由食 / 夕：宿</dd></dl>
+        <img src="assets/coast.webp" alt="風凪の風景">
+      </div>
+      <ol class="timeline">
+        <li class="important"><time>09:20</time><div><h4>風凪駅に集合</h4><p>南口・時計塔前</p></div></li>
+        <li><time>10:10</time><div><h4>港の遊歩道へ出発</h4><p>海沿いの道を歩きます。</p></div></li>
+        <li><time>11:15</time><div><h4>海の文化館に到着</h4><p>展示を見学します。</p></div></li>
+        <li><time>12:30</time><div><h4>昼食</h4><p>港周辺で自由昼食。</p></div></li>
+        <li><time>14:10</time><div><h4>灯台広場へ</h4><p>展望デッキを訪れます。</p></div></li>
+        <li><time>15:40</time><div><h4>街並みを散策</h4><p>店先を見ながら歩きます。</p></div></li>
+        <li><time>18:20</time><div><h4>宿に到着</h4><p>海辺の宿（架空）。</p></div></li>
+        <li><time>20:00</time><div><h4>夜の港を眺める</h4><p>散策は自由参加の表示例です。</p></div></li>
+      </ol>
+    </article>
+
+    <article class="day-panel" hidden>
+      <div class="day-overview">
+        <p class="day-date">4月15日（木） / 2日目</p>
+        <h3>光の差す丘を、<br>ゆっくり歩く</h3>
+        <p class="day-intro">庭園と温室を巡ります。</p>
+        <dl class="stay"><dt>宿泊</dt><dd><a href="#schedule">丘の宿（架空） ↗</a></dd></dl>
+        <dl class="meals"><dt>食事</dt><dd>朝：宿 / 昼：自由食 / 夕：宿</dd></dl>
+        <img src="assets/garden.webp" alt="丘の庭園の風景">
+      </div>
+      <ol class="timeline">
+        <li><time>08:45</time><div><h4>宿を出発</h4><p>丘の庭園へ。</p></div></li>
+        <li><time>10:30</time><div><h4>丘の温室を見学</h4><p>ガラスの温室と植物を楽しみます。</p></div></li>
+        <li><time>14:15</time><div><h4>庭園を出発</h4><p>集合は入口の案内板前。</p></div></li>
+        <li><time>17:50</time><div><h4>丘の宿に到着</h4><p>夕食は宿で。</p></div></li>
+      </ol>
+    </article>
+
+    <article class="day-panel" hidden>
+      <div class="day-overview">
+        <p class="day-date">4月16日（金） / 3日目</p>
+        <h3>手仕事のある街を、<br>たどる</h3>
+        <p class="day-intro">工房通りで自由に店を巡ります。</p>
+        <dl class="stay"><dt>宿泊</dt><dd><a href="#schedule">港の宿（架空） ↗</a></dd></dl>
+        <dl class="meals"><dt>食事</dt><dd>朝：宿 / 昼：自由食 / 夕：街の食堂</dd></dl>
+        <img src="assets/artisan.webp" alt="工房通りの風景">
+      </div>
+      <ol class="timeline">
+        <li><time>09:10</time><div><h4>宿を出発</h4><p>工房通りへ。</p></div></li>
+        <li><time>11:00</time><div><h4>陶芸工房を訪問</h4><p>器づくりを体験します。</p></div></li>
+        <li><time>12:20</time><div><h4>昼食</h4><p>工房通りの周辺で。</p></div></li>
+        <li><time>14:45</time><div><h4>自由散策</h4><p>小さな店を巡ります。</p></div></li>
+        <li><time>16:10</time><div><h4>工房通りを出発</h4><p>通りの入口に集合。</p></div></li>
+        <li><time>18:40</time><div><h4>港の宿に到着</h4><p>荷物を置いて夕食へ。</p></div></li>
+        <li><time>19:30</time><div><h4>夕食</h4><p>街の食堂で。</p></div></li>
+        <li><time>21:00</time><div><h4>宿へ戻る</h4><p>翌日の準備をします。</p></div></li>
+      </ol>
+    </article>
+
+    <article class="day-panel" hidden>
+      <div class="day-overview">
+        <p class="day-date">4月17日（土） / 4日目</p>
+        <h3>海辺の時間を、<br>持ち帰る</h3>
+        <p class="day-intro">最終日は駅周辺で過ごします。</p>
+        <dl class="meals"><dt>食事</dt><dd>朝：宿 / 昼：自由食 / 夕：各自</dd></dl>
+      </div>
+      <ol class="timeline">
+        <li><time>09:00</time><div><h4>宿を出発</h4><p>海辺へ。</p></div></li>
+        <li><time>10:20</time><div><h4>朝の散歩</h4><p>遊歩道を歩きます。</p></div></li>
+        <li><time>12:00</time><div><h4>昼食と自由時間</h4><p>駅周辺で。</p></div></li>
+        <li><time>15:30</time><div><h4>風凪駅に集合</h4><p>南口・時計塔前。</p></div></li>
+        <li><time>16:40</time><div><h4>風凪駅で解散</h4><p>４日間の旅はここまで。</p></div></li>
+      </ol>
+    </article>
+  </section>
+
+  <!-- News -->
+  <section class="news wrap" id="news">
+    <p class="section-meta"><span>02 / NEWS</span><span>更新された内容を確認</span></p>
+    <div class="news-heading">
+      <h2>新着情報</h2>
+      <p>日程や集合に変更があった場合、ここに表示します。</p>
+    </div>
+    <div class="news-list">
+      <details class="news-item">
+        <summary><time datetime="2027-04-01">2027.04.01</time><strong>集合場所を確認してください</strong><span>＋</span></summary>
+        <p>初日は風凪駅の南口、時計塔前に集まる設定です。これは架空のお知らせです。</p>
+      </details>
+      <details class="news-item">
+        <summary><time datetime="2027-03-28">2027.03.28</time><strong>４日間の日程を掲載しました</strong><span>＋</span></summary>
+        <p>日付を選ぶと、各日の予定を確認できます。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Places -->
+  <section class="places" id="places">
+    <div class="wrap">
+      <p class="section-meta"><span>03 / PLACES &amp; MOMENTS</span><span>初めての景色が、思い出になる。</span></p>
+      <div class="section-title">
+        <h2>この旅で、出会うもの。</h2>
+        <p>旅で訪れる順に、場所をたどる。</p>
+      </div>
+
+      <article class="place place-wide place-museum">
+        <div class="place-image">
+          <img src="assets/museum.webp" alt="架空の海の文化館">
+          <span class="image-number">01</span>
+        </div>
+        <div class="place-copy">
+          <p class="eyebrow">VISIT 01 / DAY 01 / KAZENAGI</p>
+          <h3>旅は、<br>海辺の文化から。</h3>
+          <p>港にある小さな文化館へ。<br>街と海の物語を、ゆっくり眺める。</p>
+          <div class="place-links">
+            <a href="#schedule">日程でみる ↗</a>
+            <a href="#top">集合案内へ ↗</a>
+          </div>
+          <small>架空の場所を表現した生成画像です。</small>
+        </div>
+      </article>
+
+      <article class="place place-wide place-reverse">
+        <div class="place-image">
+          <img src="assets/garden.webp" alt="架空の丘の温室">
+          <span class="image-number">02</span>
+        </div>
+        <div class="place-copy">
+          <p class="eyebrow">VISIT 02 / DAY 02 / HILL GARDEN</p>
+          <h3>光の中を、<br>仲間と歩く。</h3>
+          <p>丘の温室と庭園を自由に散策。<br>歩くほどに違う景色が見えてくる。</p>
+          <div class="place-links">
+            <a href="#schedule">日程でみる ↗</a>
+            <a href="#schedule">予定を見る ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="place-pair">
+        <article class="place">
+          <div class="place-image">
+            <img src="assets/artisan.webp" alt="架空の工房通り">
+            <span class="image-number">03</span>
+          </div>
+          <div class="place-copy">
+            <p class="eyebrow">VISIT 03 / DAY 03 / ARTISAN STREET</p>
+            <h3>手仕事のある街へ。</h3>
+            <p>陶器の店が並ぶ小さな通り。<br>気になる店を、自分のペースで巡る。</p>
+            <div class="place-links">
+              <a href="#schedule">日程でみる ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="place">
+          <div class="place-image">
+            <img src="assets/coast.webp" alt="架空の港の遊歩道">
+            <span class="image-number">04</span>
+          </div>
+          <div class="place-copy">
+            <p class="eyebrow">VISIT 04 / DAY 04 / SEASIDE</p>
+            <h3>最後に、海を眺める。</h3>
+            <p>帰る前に港の遊歩道へ。<br>４日間の景色を振り返る時間。</p>
+            <div class="place-links">
+              <a href="#schedule">日程でみる ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preparation -->
+  <section class="prepare wrap" id="preparation">
+    <p class="section-meta"><span>04 / GET READY</span><span>出発前に、ひとつずつ。</span></p>
+    <div class="preparation-grid">
+      <div class="prepare-intro">
+        <h2>準備も、<br>旅のはじまり。</h2>
+        <p>持ち物をそろえたら、チェックを。チェックは、このブラウザに保存されます。</p>
+        <p class="small">これは架空の旅の持ち物リストです。</p>
+        <div class="progress">
+          <span id="pack-count">0 / 12</span>
+          <span>準備できたもの</span>
+        </div>
+        <div class="progress-line" role="progressbar" aria-label="準備の進み具合" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0"><span></span></div>
+        <button class="text-button reset" id="reset-pack" type="button">チェックをリセット</button>
+        <p class="save-message" id="save-message"></p>
+      </div>
+      <div class="packing-list">
+        <div class="packing-group">
+          <h3>当日、すぐ使うもの</h3>
+          <label class="pack-label"><input type="checkbox" data-pack="itinerary"><span>旅程メモ</span></label>
+          <label class="pack-label"><input type="checkbox" data-pack="wallet"><span>財布</span></label>
+          <label class="pack-label"><input type="checkbox" data-pack="smartphone"><span>スマートフォン</span></label>
+          <label class="pack-label"><input type="checkbox" data-pack="charger"><span>充電器</span></label>
+        </div>
+        <div class="packing-group">
+          <h3>4日間の身支度</h3>
+          <label class="pack-label"><input type="checkbox" data-pack="clothes"><span>着替え</span></label>
+          <label class="pack-label"><input type="checkbox" data-pack="outerwear"><span>羽織るもの</span></label>
+          <label class="pack-label"><input type="checkbox" data-pack="toiletries"><span>洗面用具</span></label>
+          <label class="pack-label"><input type="checkbox" data-pack="towel"><span>タオル</span></label>
+        </div>
+        <div class="packing-group">
+          <h3>歩く、見つける、備える</h3>
+          <label class="pack-label"><input type="checkbox" data-pack="umbrella"><span>折りたたみ傘</span></label>
+          <label class="pack-label"><input type="checkbox" data-pack="notebook"><span>メモ帳</span></label>
+          <label class="pack-label"><input type="checkbox" data-pack="medicine"><span>必要な常備薬</span></label>
+          <label class="pack-label"><input type="checkbox" data-pack="bag"><span>散策用のバッグ</span></label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing -->
+  <section class="closing">
+    <p class="eyebrow">MAKE IT OUR JOURNEY.</p>
+    <h2>この4日間を、<br>私たちらしい旅に。</h2>
+    <a class="closing-link" href="#schedule">もう一度、日程をみる <span>↗</span></a>
+    <span class="closing-word">See you in Kazenagi.</span>
+  </section>
+</main>
+
+<footer class="footer wrap">
+  <a class="brand" href="#top">
+    <span class="brand-jp">風凪</span>
+    <span class="brand-en">OUR JOURNEY<br>SAMPLE</span>
+  </a>
+  <p>架空の４日間 / デザインサンプル<br>日程・場所・写真はすべてサンプル用です。</p>
+  <a class="back-top" href="#top">ページの先頭へ ↑</a>
+  <details class="credits">
+    <summary>写真について</summary>
+    <p>写真は架空の場所を表現するために生成しました。</p>
+  </details>
+</footer>
+
+<script>
+window.SAMPLE_BOOTSTRAP = {
+  dayMeta: {
+    dates: ['2027-04-14', '2027-04-15', '2027-04-16', '2027-04-17'],
+    dateLabels: ['4月14日（水）', '4月15日（木）', '4月16日（金）', '4月17日（土）'],
+    names: ['風凪', '丘の庭園', '工房通り', '帰路']
+  },
+  content: {
+    tripDays: [
+      { events: [['09:20','風凪駅に集合','南口・時計塔前'],['10:10','港の遊歩道へ出発','海沿いの道を歩きます。'],['11:15','海の文化館に到着','展示を見学します。'],['12:30','昼食','港周辺で自由昼食。'],['14:10','灯台広場へ','展望デッキを訪れます。'],['15:40','街並みを散策','店先を見ながら歩きます。'],['18:20','宿に到着','海辺の宿（架空）。'],['20:00','夜の港を眺める','散策は自由参加の表示例です。']] },
+      { events: [['08:45','宿を出発','丘の庭園へ。'],['10:30','丘の温室を見学','ガラスの温室と植物を楽しみます。'],['14:15','庭園を出発','集合は入口の案内板前。'],['17:50','丘の宿に到着','夕食は宿で。']] },
+      { events: [['09:10','宿を出発','工房通りへ。'],['11:00','陶芸工房を訪問','器づくりを体験します。'],['12:20','昼食','工房通りの周辺で。'],['14:45','自由散策','小さな店を巡ります。'],['16:10','工房通りを出発','通りの入口に集合。'],['18:40','港の宿に到着','荷物を置いて夕食へ。'],['19:30','夕食','街の食堂で。'],['21:00','宿へ戻る','翌日の準備をします。']] },
+      { events: [['09:00','宿を出発','海辺へ。'],['10:20','朝の散歩','遊歩道を歩きます。'],['12:00','昼食と自由時間','駅周辺で。'],['15:30','風凪駅に集合','南口・時計塔前。'],['16:40','風凪駅で解散','４日間の旅はここまで。']] }
+    ],
+    photos: {}
+  }
+};
+</script>
+<script src="app.js"></script>
+</body>
+</html>
